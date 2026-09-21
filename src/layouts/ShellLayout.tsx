@@ -12,9 +12,14 @@ import { TODAY } from "@/mock/seed";
 import { EmptyState } from "@/components/data-table";
 import { Button } from "@/components/ui/button";
 
+function normPath(p: string) {
+  if (!p || p === "/") return "/";
+  return p.replace(/\/+$/, "") || "/";
+}
+
 export function ShellLayout({ children }: { children: React.ReactNode }) {
   const { user, hydrated, logout, resetDemo } = useCRM();
-  const pathname = usePathname();
+  const pathname = normPath(usePathname());
   const router = useRouter();
   const [open, setOpen] = React.useState(false);
   const [collapsedGroups, setCollapsedGroups] = React.useState<Record<string, boolean>>({});
