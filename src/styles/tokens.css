@@ -1,0 +1,31 @@
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1e40af;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-sidebar: #0f2744;
+  --color-sidebar-2: #163456;
+  --color-success: #15803d;
+  --color-success-bg: #dcfce7;
+  --color-warning: #b45309;
+  --color-warning-bg: #fef3c7;
+  --color-danger: #b91c1c;
+  --color-danger-bg: #fee2e2;
+
+  /* 业务类型标签色（对齐客户 monday 标签） */
+  --label-guardian: #579bfc;      /* 监护 */
+  --label-transfer: #a25ddc;      /* 转学 */
+  --label-afterschool: #fdab3d;   /* After-school */
+  --label-credit: #037f4c;        /* 学分课 */
+  --label-university: #0073ea;    /* 大学申请 */
+  --label-activity: #ff158a;      /* 活动 */
+  --label-camp: #ffcb00;          /* 夏令营，深字 */
+  --label-private: #ff5ac4;       /* 私校申请 */
+  --label-visa: #7f5347;          /* 签证 */
+  --label-other: #808080;         /* 其他 */
+  --label-done: #00c875;          /* 成交 / 已付款 / 已通过 */
+  --label-stuck: #e2445c;         /* 失单 / 退回 / 缺席 */
+}

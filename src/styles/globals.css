@@ -1,0 +1,24 @@
+@import "./tokens.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body), "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display), "PingFang SC", "Microsoft YaHei", serif;
+}
+
+/* 可滚动但不显示滚动条（侧栏） */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
